@@ -1,0 +1,297 @@
+/* ------- fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ------ Body ------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------- common styles or utilities ----------- */
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------- top players Banner Start ------------ */
+
+.top-banner {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    border-radius: 10px;
+    padding: 0 50px;
+    justify-items: end;
+    align-items: center;
+}
+
+.players h1 {
+    font-size: 70px;
+    font-weight: 700px;
+    line-height: 1.2;
+}
+
+.players p {
+    margin: 20px 0 30px;
+}
+
+.button,
+.view-all-button {
+    color: white;
+    background-color: #dd0000;
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.fa-angle-right {
+    margin-left: 10px;
+}
+
+.banners-img img {
+    width: 500px;
+}
+
+/* -------------- Blog Live Match Start ------------ */
+
+.blog-match {
+    margin: 100px 0 50px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-column-gap: 20px;
+}
+
+.live-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    background: #000000;
+    height: 170px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.blog-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.live-info a {
+    padding: 5px;
+    color: #000000;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.blog {
+    background-color: red !important;
+    color: white !important;
+}
+
+.blog-inner {
+    border-radius: 10px;
+    box-shadow: 0 0 5px lightgrey;
+}
+
+.live-info img {
+    width: 100%;
+}
+
+.time-comment span {
+    margin-right: 40px;
+}
+
+.time-comment .fa-span {
+    margin-right: 10px;
+}
+
+.blog-inner p a {
+    margin: 10px 0;
+    padding: 5px 15px;
+    border: 1px solid gray;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+.info h2 {
+    margin-bottom: 11px;
+    font-size: 19px;
+}
+
+.info {
+    padding: 10px 20px 23px;
+}
+
+.view-all {
+    text-align: center;
+    margin-bottom: 50px;
+    display: none;
+}
+
+
+/* --------------- Footer Start ------------- */
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 70px 0;
+}
+
+footer h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+.footers-item {
+    text-align: center;
+}
+
+.footers-item a {
+    display: inline-block;
+    margin-top: 50px;
+    color: white;
+    margin-right: 30px;
+
+}
+
+/* ------------------- Mobile Media Quary ----------------- */
+@media only screen and (max-width: 688px) {
+    .container {
+        max-width: 330px;
+
+    }
+
+    .players {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .top-banner {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
+        justify-items: center;
+    }
+
+    .players h1 {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
+        justify-items: center;
+    }
+
+    .players p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .banners-img img {
+        width: 100%;
+    }
+
+    .blog-match {
+        grid-template-columns: auto;
+        margin: 0;
+    }
+
+    .live-info {
+        box-shadow: 0 0 5px grey;
+    }
+
+    .live-info {
+        background: none;
+        justify-content: space-around;
+        border-radius: 10px;
+        height: none !important;
+        text-align: center;
+        margin: 22px 0;
+        padding: 0;
+    }
+
+    .blog-match {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+
+    footer h2 {
+        margin-bottom: 30px;
+
+    }
+
+    .footers-item {
+        color: white;
+        margin-right: 0;
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+/* --------------- Tablet Media Quary ------------------ */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .players {
+        font-size: 30px;
+    }
+
+    .players p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .banners-img img {
+        width: 300%;
+    }
+
+    .blog-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-match {
+        grid-template-columns: auto;
+    }
+
+    .view-all {
+        text-align: center;
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    .live-info {
+        background: none;
+        flex-direction: row;
+        height: unset !important;
+        padding: 0;
+    }
+
+}
