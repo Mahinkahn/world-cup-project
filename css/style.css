@@ -37,7 +37,7 @@ a {
 }
 
 .players h1 {
-    font-size: 70px;
+    font-size: 74px;
     font-weight: 700px;
     line-height: 1.2;
 }
@@ -50,7 +50,7 @@ a {
 .view-all-button {
     color: white;
     background-color: #dd0000;
-    padding: 5px 25px;
+    padding: 15px 30px;
     border-radius: 5px;
     font-size: 15px;
 }
@@ -160,6 +160,7 @@ footer h2 {
 hr {
     width: 80%;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .footers-item {
@@ -168,10 +169,19 @@ hr {
 
 .footers-item a {
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 20px;
     color: white;
     margin-right: 30px;
 
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+    display: inline-block;
+    align-items: center;
 }
 
 /* ------------------- Mobile Media Quary ----------------- */
@@ -305,7 +315,12 @@ hr {
     padding: 20px;
 }
 
-.blog-info {
+.info {
+    box-shadow: 0 0 5px lightgrey;
+    border-radius: 10px;
+}
+
+.blog-item {
     padding: 10px 20px 23px;
 }
 
