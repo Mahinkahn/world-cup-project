@@ -295,3 +295,21 @@ hr {
     }
 
 }
+
+/* upcoming-match */
+
+.upcoming-match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.blog-info {
+    padding: 10px 20px 23px;
+}
+
+.match-title,
+.match-time {
+    text-align: center;
+}
